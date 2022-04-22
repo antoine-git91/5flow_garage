@@ -1,0 +1,21 @@
+.response_box{
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    min-width: 200px;
+    background-color: #fff;
+    box-shadow: #676767;
+}
+
+.show{
+    display: block;
+}
+
+.success{
+    background-color: #94c78d;
+}

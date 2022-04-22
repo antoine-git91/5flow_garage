@@ -1,0 +1,42 @@
+
+.btn{
+    border: 0px solid transparent;
+    border-radius: 3px;
+    padding: 10px 15px;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    width: max-content;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: #2379c2;
+}
+
+.btn-primary:hover{
+    background-color: #15568d;
+}
+
+.btn-danger{
+    background-color: #ec294b;
+}
+
+.btn-danger:hover{
+    background-color: #c22a44;
+}
+
+.btn-success{
+    background-color: #1ba13a;
+}
+
+.btn-success:hover{
+    background-color: #0f852a;
+}
+
+#btn_submit_new_car{
+    display: flex;
+    align-self: center;
+    height: min-content;
+    margin-top: 8px;
+}

@@ -1,0 +1,13 @@
+nav{
+    background-color: #a8a8a8;
+    padding: 20px 35px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav.home{
+    font-weight: bold;
+}

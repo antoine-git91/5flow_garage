@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>5flow - Garage</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <nav class="home">
+        <a href="index.html">5Flow Garage</a>
+    </nav>
+    <div class="container">
+        <h1>Dashboard</h1>
+
+        <button id="btn_add_car_modal" class="btn btn-success">Ajouter une voiture</button>
+
+        <table id="table_car" class="table table-hover">
+            <thead>
+            <tr>
+                <th scope="col">Marque</th>
+                <th scope="col">Modèle</th>
+                <th scope="col">Immatriculation</th>
+                <th scope="col">Carburant</th>
+                <th scope="col">Prix</th>
+                <th scope="col">Type de vente</th>
+                <th scope="col">Réservé</th>
+                <th scope="col">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--Insert element fetch-->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal Form -->
+    <div class="overlay_modal" id="overlay_modal">
+        <div class="modal" id="modal">
+            <button id="btn_close_modal" class="btn-close btn btn-danger">X</button>
+            <p class="title_form">Ajout d'une voiture</p>
+            <form name="form_add_car" id="form_add_car">
+                <div class="flex">
+                    <div class="input_group">
+                        <label for="marque">Marque</label>
+                        <select name="marque" id="marque" autofocus required >
+                            <option value="">Marques...</option>
+                            <!-- options marque here -->
+                        </select>
+                    </div>
+                    <div class="input_group">
+                        <label for="model">Modèle</label>
+                        <select name="model" id="model" disabled required >
+                            <option value="">Modèles...</option>
+                            <!-- options model here -->
+                        </select>
+                    </div>
+                    <div class="input_group">
+                        <label for="immatriculation">Immatriculation</label>
+                        <input type="text" name="immatriculation" id="immatriculation" pattern="[A-Z]{2}-[0-9]{3}-[A-Z]{2}" placeholder="AA-111-AA" required />
+                    </div>
+                </div>
+                <div class="input_group">
+                    <label for="fuel">Carburant</label>
+                    <select name="fuel" id="fuel" required >
+                        <option value="">Carburant</option>
+                        <!-- options fuels here -->
+                    </select>
+                </div>
+                <div class="input_group">
+                    <label for="price">Prix</label>
+                    <input type="number" name="price" id="price" step="any" required />
+                </div>
+                <div class="input_group">
+                    <label for="type_sale">Type de vente</label>
+                    <select name="type_sale" id="type_sale" required >
+                        <option value="0">Occasion</option>
+                        <option value="1">Neuf</option>
+                    </select>
+                </div>
+                <div class="input_group">
+                    <label for="booked">Réservé</label>
+                    <select name="booked" id="booked" required >
+                        <option value="0">Non</option>
+                        <option value="1">Oui</option>
+                    </select>
+                </div>
+                <button id="btn_submit_new_car" class="btn btn-primary" type="submit">Ajouter la voiture</button>
+            </form>
+        </div>
+    </div>
+    <!---->
+
+    <!-- message box-->
+    <div id="response_box" class="response_box"></div>
+
+</body>
+<!-- Index -->
+<script src="index.js" type="application/javascript"></script>
+<!-- Tools -->
+<script src="js/tools/find_option_select.js" type="application/javascript"></script>
+<!-- Dom -->
+<script src="js/dom/modal.js" type="application/javascript"></script>
+<script src="js/dom/select_models.js" type="application/javascript"></script>
+<script src="js/dom/table_body.js" type="application/javascript"></script>
+<script src="js/dom/popup.js" type="application/javascript"></script>
+<!-- Fetch-->
+<script src="js/fetch/get_fuels.js" type="application/javascript"></script>
+<script src="js/fetch/get_models.js" type="application/javascript"></script>
+<script src="js/fetch/get_marques.js" type="application/javascript"></script>
+<script src="js/fetch/get_voitures.js" type="application/javascript"></script>
+<script src="js/fetch/create_car.js" type="application/javascript"></script>
+
+</html>

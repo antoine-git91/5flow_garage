@@ -1,0 +1,63 @@
+
+form {
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#modal p.title_form{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+form label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form select{
+    padding: 10px 20px;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+form input{
+    border: 1px solid #676767;
+}
+
+form p{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input_group{
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.radio{
+    display: flex;
+    align-items: baseline;
+    margin-right: 20px;
+}
+
+.radio label{
+    margin-right: 8px;
+    font-weight: normal;
+}
+
+.form_error{
+    background-color: #cb3244;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.error_field{
+    outline: none !important;
+    border: 3px solid #c22a44;
+}

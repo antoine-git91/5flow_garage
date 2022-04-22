@@ -1,0 +1,19 @@
+{
+    "name": "louch/five_flow",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Core\\": "core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antoine",
+            "email": "louchardantoine@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "ext-pdo": "*"
+    }
+}
